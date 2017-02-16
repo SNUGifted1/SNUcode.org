@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>SNUgifted</title>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+  <script>
+    $("document").ready(function() {
+      $("#typeing").typed({
+        strings: ["SNUCode.org"],
+        typeSpeed: 50,
+        startDelay: 400,
+        callback: function() {
+          setTimeout(function() {
+            $("#moto").animate({opacity: 1.0}, 800);
+          }, 300);
+        }
+      });
+    });
+  </script>
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+      background-color: #828282;
+    }
+
+    #typeing {
+      text-align: center;
+      font-size: 400%;
+      color: white;
+    }
+
+    #moto {
+      color: white;
+      text-align: center;
+      font-size: 160%;
+      opacity: 0;
+    }
+
+    #main {
+      position: absolute;
+      top: 50%;
+      margin-top: -73.5px;
+
+      left: 50%;
+      margin-left: -217.5px;
+    }
+
+
+    .typed-cursor {
+      color: transparent;
+    }
+  </style>
+ </head>
+ <body>
+   <div id="main">
+     <div id="typeing"></div>
+     <div id="moto">Learning computer science with Voxel</div>
+   </div>
+ </body>
+</html>
